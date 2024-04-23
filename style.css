@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+body{
+    background-color: var(--Light-grey);
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main{
+    background-color: var(--White);
+    width: 550px;
+    height: auto;
+    margin: 80px 25px 50px 40px;
+    padding: 20px;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 150px;   
+   
+}
+
+main div section label{
+    color: var(--Smokey-grey);    
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 15px 0px 5px;
+    width: 80px;
+    height: auto;    
+}
+
+#label-day {
+    margin-right: 60px;
+}
+
+#label-month {
+    margin-right: 45px;
+}
+
+#label-year {
+    margin-right: 60px;
+}
+
+#labelValidDay{
+    color: var(--Light-red);
+    font-size: 7px;
+    font-style: italic;
+}
+
+#labelValidMonth{
+    color: var(--Light-red);
+    font-size: 7px;
+    font-style: italic;
+    margin: 0px;
+    
+}
+
+#labelValidYear{
+    color: var(--Light-red);
+    font-size: 7px;
+    font-style: italic;
+    margin: 12px;
+    
+}
+
+
+main div section input{
+    width: 80px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: var(--Off-black);
+    padding-left: 20px;
+    margin: 5px 5px 0px 5px;        
+    background-color: var(--White);
+    border: 1px solid var(--Smokey-grey);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenedor-fecha{
+    width: 400px;
+    height:auto;
+}
+
+main div p{    
+    font-size: 52px;
+    font-weight: bolder;
+    width: auto;
+    height: auto;
+}
+
+em{
+    color: var(--Purple)
+}
+
+hr{
+    color: var(--Off-black);
+    margin-top: 30px;
+    width: 80%;
+}
+
+img{
+    background-color: var(--Purple);
+    border-radius: 50%;
+    width:60px;
+    height: 60px;
+    padding: 10px;
+    margin-top: -35px;
+    margin-right: 40px;
+}
+
+img:hover{
+    background-color: var(--Off-black);
+    cursor: pointer;
+}
+
+.contenedor-imagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 375px){
+    
+    main{       
+        width: 350px;
+        height: auto;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: 35px;
+    }
+
+    .contenedor-imagen{
+        margin-right: -35px;        
+        justify-content: center;
+        align-items: center;
+    }
+
+    hr{        
+        width: 98%;
+    }
+}
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age Calculator App</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="contenedor-principal">
+
+    <div class="contenedor-fecha">
+
+      <section class="labels">
+        <label for="Day" id="label-day">DAY</label>
+        <label for="Month" id="label-month">MONTH</label>
+        <label for="Year" id="label-year">YEAR</label> 
+      </section>            
+      <section class="input-fecha">
+        <input type="text" name="DD" placeholder="DD" id="Day">      
+        <input type="text" name="MM" placeholder="MM" id="Month">          
+        <input type="text" name="YYYY" placeholder="YYYY" id="Year">
+      </section>
+      <section class="labels-valid">
+        <label for="Day" id="labelValidDay"></label>
+        <label for="Month" id="labelValidMonth"></label>
+        <label for="Year" id="labelValidYear"></label> 
+      </section> 
+    </div>
+    <hr>
+    <div class="contenedor-imagen" id="image-arrow">      
+      <img src="./assets/images/icon-arrow.svg" alt="arrow"> 
+    </div>
+       
+    <div class="contenedor-calculo">
+      <p><em id="displayYears">--</em> years</p>
+      <p><em id="displayMonths">--</em> months</p>
+      <p><em id="displayDays">--</em> days</p>
+    </div>  
+
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="app.js"></script> 
+</body>
+</html>
